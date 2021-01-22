@@ -4,7 +4,7 @@
 function kilometerToMeter(kilometer){
     const meeter = 1000; // 1km = 1000m
     if(kilometer < 0){
-        return -1;
+        return -1; //If any negetive value enter it will send an error
     }
     let dist = meeter * kilometer; // finding distance into meeter
     return dist;
@@ -14,7 +14,7 @@ let result = kilometerToMeter(-5);
 
 if(result = -1)
 {
-    console.log('Error');
+    console.log('Distance cannot be negative');
 }
 else{
     console.log(resultt);
@@ -37,7 +37,7 @@ function budgetCalculator(watchCount, phoneCount, laptopCount){
 
 let cost = budgetCalculator(1, 0.5, -2)
 if(cost == -1){
-    console.log('Error');
+    console.log('Please Enter a positive integer value');
 }
 else{
     console.log(cost);
@@ -72,7 +72,7 @@ function hotelCost(day){
 let payment = hotelCost(-5);
 if(payment = -1)
 {
-    console.log('Error');
+    console.log('Day cannot be negative');
 }
 else{
     console.log(payment);
@@ -91,7 +91,7 @@ function megaFriend(name){
     return index;
 }
 
-let friendName = ['Shamim','Likhon', 'Kaderiabaheni','Rupak','Manbendra'];
+let friendName = ['Shamim','Likhon','Rupak'];
 let lengthOfName = [];
 //Storing length of name
 for(let i=0; i<friendName.length; i++){

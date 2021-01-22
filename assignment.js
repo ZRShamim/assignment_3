@@ -6,18 +6,19 @@ function kilometerToMeter(kilometer){
     if(kilometer < 0){
         return -1; //If any negetive value enter it will send an error
     }
-    let dist = meeter * kilometer; // finding distance into meeter
-    return dist;
+    else{
+        let dist = meeter * kilometer; // finding distance into meeter
+        return dist;
+    }
 }
 
-let result = kilometerToMeter(-5);
-
-if(result = -1)
+let kiloToMeter = kilometerToMeter(15);
+if(kiloToMeter == -1)
 {
     console.log('Distance cannot be negative');
 }
 else{
-    console.log(resultt);
+    console.log(kiloToMeter);
 }
 
 //2nd problem
@@ -35,7 +36,7 @@ function budgetCalculator(watchCount, phoneCount, laptopCount){
     }
 }
 
-let cost = budgetCalculator(1, 0.5, -2)
+let cost = budgetCalculator(1, 5, 2)
 if(cost == -1){
     console.log('Please Enter a positive integer value');
 }
@@ -69,8 +70,8 @@ function hotelCost(day){
     }
 }
 
-let payment = hotelCost(-5);
-if(payment = -1)
+let payment = hotelCost(15);
+if(payment == -1)
 {
     console.log('Day cannot be negative');
 }
